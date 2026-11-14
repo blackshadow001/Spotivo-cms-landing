@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+.chrome-*/
+.edge-*/
+preview-*.png
+npm-debug.log*

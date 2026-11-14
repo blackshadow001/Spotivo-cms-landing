@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Spotivo helps teams upload, organize, assign, and monitor digital signage across Android TV screens from one control panel." />
+    <meta name="theme-color" content="#f7f6f1" />
+    <title>Spotivo — Every screen, on your terms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Spotivo home">
+        <img src="assets/spotivo-mark.png" alt="" />
+        <span>spotivo</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#workflow">How it works</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#reliability">Reliability</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="button button-small button-dark header-cta" href="#contact">Plan your setup</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
+        <a href="#workflow">How it works</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#reliability">Reliability</a>
+        <a href="#faq">FAQ</a>
+        <a class="button button-dark" href="#contact">Plan your setup</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Digital signage, without the daily friction</p>
+          <h1>Every screen.<br /><em>One clear story.</em></h1>
+          <p class="hero-lede">Upload your media, organize displays, send the right playlist, and verify playback—all from one straightforward workspace.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#workflow">See how Spotivo works <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#workflow">Explore how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <ul class="trust-list" aria-label="Product highlights">
+            <li>Android TV player</li>
+            <li>Offline playback</li>
+            <li>Portrait + landscape</li>
+          </ul>
+        </div>
+
+        <div class="hero-stage reveal delay-1" aria-label="A Spotivo screen network illustration">
+          <div class="stage-orbit stage-orbit-one"></div>
+          <div class="stage-orbit stage-orbit-two"></div>
+          <div class="screen screen-landscape">
+            <div class="screen-bar"><span></span><span>MAIN LOBBY</span><span>ONLINE</span></div>
+            <div class="screen-creative">
+              <p>Make every<br />moment visible.</p>
+              <span>Spring campaign / 01</span>
+            </div>
+          </div>
+          <div class="screen screen-portrait">
+            <div class="portrait-art"><span>NEW</span><strong>Fresh<br />starts<br />here.</strong></div>
+          </div>
+          <div class="network-card card-online">
+            <span class="pulse-dot"></span>
+            <div><strong>Screen online</strong><small>Playlist synced</small></div>
+          </div>
+          <div class="network-card card-playlist">
+            <small>NOW PLAYING</small>
+            <strong>Morning campaign</strong>
+            <div class="progress"><span></span></div>
+          </div>
+          <div class="float-chip chip-one">01</div>
+          <div class="float-chip chip-two">PLAY</div>
+        </div>
+      </section>
+
+      <section class="journey-strip" aria-label="Spotivo workflow overview">
+        <div><span>01</span><strong>Upload</strong><small>Images and videos</small></div>
+        <i aria-hidden="true">→</i>
+        <div><span>02</span><strong>Organize</strong><small>Locations and groups</small></div>
+        <i aria-hidden="true">→</i>
+        <div><span>03</span><strong>Assign</strong><small>Playlists to screens</small></div>
+        <i aria-hidden="true">→</i>
+        <div><span>04</span><strong>Verify</strong><small>Playback reports</small></div>
+      </section>
+
+      <section class="section workflow-section" id="workflow">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">The Spotivo workflow</p>
+            <h2>From a blank screen<br />to a live campaign.</h2>
+          </div>
+          <p>Four practical stages keep the work understandable for your team and reliable on every paired display.</p>
+        </div>
+
+        <div class="workflow-shell reveal">
+          <div class="workflow-tabs" role="tablist" aria-label="Workflow stages">
+            <button type="button" role="tab" aria-selected="true" data-step="0"><span>01</span><b>Prepare</b><small>Upload media</small></button>
+            <button type="button" role="tab" aria-selected="false" data-step="1"><span>02</span><b>Connect</b><small>Pair a screen</small></button>
+            <button type="button" role="tab" aria-selected="false" data-step="2"><span>03</span><b>Deploy</b><small>Assign a playlist</small></button>
+            <button type="button" role="tab" aria-selected="false" data-step="3"><span>04</span><b>Observe</b><small>Check playback</small></button>
+          </div>
+
+          <div class="workflow-display">
+            <div class="browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span><p>Spotivo control panel</p></div>
+              <img data-workflow-image src="assets/workflow/06-ads.jpg" alt="Spotivo advertisement library" />
+            </div>
+            <div class="workflow-note">
+              <span data-workflow-number>01 / PREPARE</span>
+              <h3 data-workflow-title>Bring your media in.</h3>
+              <p data-workflow-copy>Upload campaign images and videos into one asset library. Spotivo prepares supported media for consistent TV playback.</p>
+              <ul data-workflow-list>
+                <li>Image and video assets</li>
+                <li>Clear media type and duration</li>
+                <li>Reusable across playlists</li>
+              </ul>
+              <div class="tab-progress" aria-hidden="true"><span data-workflow-progress></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section capabilities" id="capabilities">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Built around real operations</p>
+            <h2>Less screen chasing.<br />More control.</h2>
+          </div>
+          <p>Spotivo keeps the everyday signage tasks together, from screen setup through proof-of-play.</p>
+        </div>
+
+        <div class="capability-grid">
+          <article class="capability-card capability-large reveal">
+            <div class="card-kicker"><span>CONTENT</span><span>01</span></div>
+            <h3>Create one library.<br />Use it everywhere.</h3>
+            <p>Keep images, video campaigns, and playlists organized without rebuilding the same sequence for every display.</p>
+            <div class="asset-stack" aria-hidden="true">
+              <div class="asset asset-a"><span>VIDEO</span><strong>Summer launch</strong><small>00:15</small></div>
+              <div class="asset asset-b"><span>IMAGE</span><strong>Store hours</strong><small>10 sec</small></div>
+              <div class="asset asset-c"><span>VIDEO</span><strong>Brand story</strong><small>00:32</small></div>
+            </div>
+          </article>
+
+          <article class="capability-card capability-blue reveal delay-1">
+            <div class="card-kicker"><span>FLEET</span><span>02</span></div>
+            <h3>Manage by screen, group, or location.</h3>
+            <p>Choose the exact destination for each playlist and keep larger networks manageable.</p>
+            <div class="mini-map" aria-hidden="true">
+              <span class="map-pin pin-a"></span><span class="map-pin pin-b"></span><span class="map-pin pin-c"></span>
+              <i></i><i></i><i></i>
+              <b>3 locations connected</b>
+            </div>
+          </article>
+
+          <article class="capability-card capability-warm reveal">
+            <div class="card-kicker"><span>DISPLAY</span><span>03</span></div>
+            <h3>Fit the physical screen.</h3>
+            <p>Set portrait or landscape orientation, rotate the output, and choose whether video audio should play.</p>
+            <div class="orientation-demo" aria-hidden="true">
+              <div class="orientation-landscape"><span>16:9</span></div>
+              <div class="rotate-icon">↻</div>
+              <div class="orientation-portrait"><span>9:16</span></div>
+            </div>
+          </article>
+
+          <article class="capability-card capability-dark reveal delay-1">
+            <div class="card-kicker"><span>REPORTING</span><span>04</span></div>
+            <h3>See what actually played.</h3>
+            <p>Review screen status and playback activity without standing in front of the TV.</p>
+            <div class="report-chart" aria-hidden="true">
+              <span style="--h: 35%"></span><span style="--h: 58%"></span><span style="--h: 45%"></span><span style="--h: 80%"></span><span style="--h: 68%"></span><span style="--h: 92%"></span><span style="--h: 74%"></span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="reliability-section" id="reliability">
+        <div class="reliability-copy reveal">
+          <p class="eyebrow">Designed for interruptions</p>
+          <h2>Internet drops.<br /><em>Your playlist doesn’t.</em></h2>
+          <p>Once assigned media is downloaded to the player, Spotivo can continue the cached playlist during a temporary connection or backend outage. When the connection returns, the player checks for the latest assignment.</p>
+          <div class="reliability-points">
+            <div><span>01</span><p><strong>Download first</strong><small>Assigned media is prepared on the player.</small></p></div>
+            <div><span>02</span><p><strong>Play locally</strong><small>Cached content keeps looping offline.</small></p></div>
+            <div><span>03</span><p><strong>Sync again</strong><small>New assignments arrive after reconnection.</small></p></div>
+          </div>
+        </div>
+        <div class="reliability-visual reveal delay-1" aria-label="Offline playback sequence">
+          <div class="signal-card">
+            <div class="signal-top"><span>PLAYER STATUS</span><b>LIVE</b></div>
+            <div class="signal-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <strong>Playing from local cache</strong>
+            <small>Morning campaign · 4 items</small>
+          </div>
+          <div class="offline-badge"><span>⌁</span><div><strong>Connection unavailable</strong><small>Playback continues</small></div></div>
+          <div class="sync-badge"><span>✓</span><div><strong>Media ready</strong><small>Stored on this screen</small></div></div>
+        </div>
+      </section>
+
+      <section class="use-cases">
+        <p class="eyebrow">One system, many spaces</p>
+        <div class="marquee" aria-label="Example industries">
+          <div>
+            <span>Retail</span><i>•</i><span>Hospitality</span><i>•</i><span>Healthcare</span><i>•</i><span>Education</span><i>•</i><span>Workplaces</span><i>•</i><span>Public spaces</span><i>•</i>
+          </div>
+          <div aria-hidden="true">
+            <span>Retail</span><i>•</i><span>Hospitality</span><i>•</i><span>Healthcare</span><i>•</i><span>Education</span><i>•</i><span>Workplaces</span><i>•</i><span>Public spaces</span><i>•</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="faq-intro reveal">
+          <p class="eyebrow">Questions, answered clearly</p>
+          <h2>Before you put<br />Spotivo on screen.</h2>
+          <p>The practical details teams usually need before setting up their first player.</p>
+          <a class="text-link" href="mailto:enterprise@spotivo.cloud">Ask another question <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="faq-list reveal delay-1">
+          <details open>
+            <summary>What happens when the internet goes offline?<span aria-hidden="true">+</span></summary>
+            <p>After the assigned playlist and media have downloaded, the player can continue using its local cache. It checks for current assignments again when the connection returns.</p>
+          </details>
+          <details>
+            <summary>Can screens be installed vertically?<span aria-hidden="true">+</span></summary>
+            <p>Yes. Each screen can be configured for portrait or landscape installation, with an additional 180° flip option when the physical display is mounted upside down.</p>
+          </details>
+          <details>
+            <summary>Can video audio be turned off per screen?<span aria-hidden="true">+</span></summary>
+            <p>Yes. Screen audio is controlled from the control panel, allowing a display to play video sound or remain muted.</p>
+          </details>
+          <details>
+            <summary>How are playlists assigned?<span aria-hidden="true">+</span></summary>
+            <p>A playlist can be sent to an individual screen, a screen group, or a location. This lets teams reuse content while keeping each destination under control.</p>
+          </details>
+          <details>
+            <summary>Can I check whether an advertisement played?<span aria-hidden="true">+</span></summary>
+            <p>Playback reporting provides screen-specific activity, completed plays, errors, and timing information when the player has reported it.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-mark" aria-hidden="true"><img src="assets/spotivo-mark.png" alt="" /></div>
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Ready when your screens are</p>
+          <h2>Make every screen<br /><em>work with purpose.</em></h2>
+          <p>Start with one display or plan a network across locations. Spotivo keeps the setup understandable from day one.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:enterprise@spotivo.cloud">Talk about your setup <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="brand footer-brand" href="#top"><img src="assets/spotivo-mark.png" alt="" /><span>spotivo</span></a>
+          <p>Digital signage that keeps content, screens, and playback reporting in one clear workspace.</p>
+          <a class="footer-contact" href="mailto:enterprise@spotivo.cloud">enterprise@spotivo.cloud <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h3>Product</h3>
+            <a href="#workflow">How it works</a>
+            <a href="#capabilities">Capabilities</a>
+            <a href="#reliability">Offline playback</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div>
+            <h3>Manage</h3>
+            <a href="#workflow">Media library</a>
+            <a href="#workflow">Screens &amp; pairing</a>
+            <a href="#workflow">Playlists</a>
+            <a href="#capabilities">Playback reports</a>
+          </div>
+          <div>
+            <h3>Use cases</h3>
+            <a href="#capabilities">Retail</a>
+            <a href="#capabilities">Hospitality</a>
+            <a href="#capabilities">Healthcare</a>
+            <a href="#capabilities">Education</a>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <a href="mailto:enterprise@spotivo.cloud">Product enquiry</a>
+            <a href="mailto:enterprise@spotivo.cloud?subject=Spotivo%20support">Support</a>
+            <a href="#contact">Plan your setup</a>
+            <a href="#top">Back to top ↑</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year></span> Spotivo. All rights reserved.</p>
+        <p>Every screen. Your brand.</p>
+        <div><span>Android TV player</span><span>Offline-ready playback</span></div>
+      </div>
+    </footer>
+  </body>
+</html>

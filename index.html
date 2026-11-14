@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Spotivo helps teams upload, organize, assign, and monitor digital signage across Android TV screens from one control panel." />
     <meta name="theme-color" content="#f7f6f1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Spotivo — Digital signage without the daily friction" />
+    <meta property="og:description" content="Manage media, Android TV screens, playlists, offline playback, and proof-of-play from one clear workspace." />
+    <meta property="og:url" content="https://spotivo-cms-landing.onrender.com/" />
+    <meta property="og:image" content="https://spotivo-cms-landing.onrender.com/assets/venues/retail-signage.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://spotivo-cms-landing.onrender.com/" />
+    <link rel="icon" type="image/png" href="assets/spotivo-mark.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <title>Spotivo — Every screen, on your terms</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Spotivo","applicationCategory":"BusinessApplication","operatingSystem":"Android TV","description":"A digital signage control panel and Android TV player for managing media, playlists, screens, offline playback, and playback reporting.","url":"https://spotivo-cms-landing.onrender.com/","offers":{"@type":"AggregateOffer","priceCurrency":"INR","lowPrice":"399","offerCount":"3"}}
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -22,6 +34,7 @@
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#workflow">How it works</a>
+        <a href="#product-tour">Product tour</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#reliability">Reliability</a>
         <a href="#pricing">Pricing</a>
@@ -33,6 +46,7 @@
       </button>
       <nav class="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
         <a href="#workflow">How it works</a>
+        <a href="#product-tour">Product tour</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#reliability">Reliability</a>
         <a href="#pricing">Pricing</a>
@@ -49,7 +63,7 @@
           <p class="hero-lede">Upload your media, organize displays, send the right playlist, and verify playback—all from one straightforward workspace.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#workflow">See how Spotivo works <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="#workflow">Explore how it works <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#pricing">View pricing <span aria-hidden="true">↓</span></a>
           </div>
           <ul class="trust-list" aria-label="Product highlights">
             <li>Android TV player</li>
@@ -132,6 +146,34 @@
         </div>
       </section>
 
+      <section class="section product-tour" id="product-tour">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">Actual product interface</p>
+            <h2>See the workflow<br /><em>before you commit.</em></h2>
+          </div>
+          <p>These are real Spotivo control-panel views—not conceptual mockups. Follow the path from screen pairing to playback reporting.</p>
+        </div>
+        <div class="product-proof-grid">
+          <figure class="proof-shot proof-shot-wide reveal">
+            <img src="assets/workflow/04-screens.jpg" loading="lazy" decoding="async" alt="Spotivo screen management and pairing interface" />
+            <figcaption><span>01</span><div><strong>Pair and configure screens</strong><small>Name the display, select its installation direction, and control its playback settings.</small></div></figcaption>
+          </figure>
+          <figure class="proof-shot reveal delay-1">
+            <img src="assets/workflow/06-ads.jpg" loading="lazy" decoding="async" alt="Spotivo media library interface" />
+            <figcaption><span>02</span><div><strong>Build the media library</strong><small>Keep image and video assets ready for reusable playlists.</small></div></figcaption>
+          </figure>
+          <figure class="proof-shot reveal">
+            <img src="assets/workflow/08-assignment.jpg" loading="lazy" decoding="async" alt="Spotivo playlist assignment interface" />
+            <figcaption><span>03</span><div><strong>Assign the right playlist</strong><small>Target a screen, group, or location without duplicating work.</small></div></figcaption>
+          </figure>
+          <figure class="proof-shot proof-shot-wide reveal delay-1">
+            <img src="assets/workflow/10-metrics.jpg" loading="lazy" decoding="async" alt="Spotivo playback reporting interface" />
+            <figcaption><span>04</span><div><strong>Review playback activity</strong><small>Use screen-specific reporting to check what completed and where.</small></div></figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section class="section capabilities" id="capabilities">
         <div class="section-heading reveal">
           <div>
@@ -183,6 +225,21 @@
               <span style="--h: 35%"></span><span style="--h: 58%"></span><span style="--h: 45%"></span><span style="--h: 80%"></span><span style="--h: 68%"></span><span style="--h: 92%"></span><span style="--h: 74%"></span>
             </div>
           </article>
+        </div>
+      </section>
+
+      <section class="section deployment-fit" id="compatibility">
+        <div class="deployment-fit-copy reveal">
+          <p class="eyebrow">Plan with fewer surprises</p>
+          <h2>Know what the player needs<br />before installation day.</h2>
+          <p>Spotivo is designed around an Android TV player and a web-based controller. Confirm the exact TV model and deployment method with us before a larger rollout.</p>
+          <a class="button button-dark" href="#contact">Check my TV setup <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="fit-checklist reveal delay-1">
+          <article><span>01</span><div><strong>Android TV player</strong><p>Install the Spotivo player APK on a compatible Android TV device, including Android TV 12 deployments.</p></div></article>
+          <article><span>02</span><div><strong>Portrait or landscape</strong><p>Configure screen orientation, 180° direction, and per-screen audio from the control panel.</p></div></article>
+          <article><span>03</span><div><strong>Media prepared for playback</strong><p>Uploaded images and videos are organized for playlists; supported formats can be normalized for TV playback.</p></div></article>
+          <article><span>04</span><div><strong>Offline continuity</strong><p>After assigned media is downloaded, the player can continue the cached playlist through a temporary outage.</p></div></article>
         </div>
       </section>
 
@@ -239,7 +296,7 @@
         <div class="pricing-heading reveal">
           <p class="eyebrow">Transparent scale licensing</p>
           <h2>Predictable Pricing for Growing Networks</h2>
-          <p>License only the active screens you manage. No hidden fees, no per-user surcharges, and offline player support included on all plans.</p>
+          <p>Plan around the active screens you manage, with volume options for multi-location and enterprise deployments.</p>
         </div>
 
         <div class="pricing-calculator reveal">
@@ -290,7 +347,7 @@
             <div class="pricing-plan-price">₹399 <small>/ screen / mo</small></div>
             <p>Designed for hospital chains, shopping malls, retail chains, and transit lines.</p>
             <ul><li>5 to 50 Displays</li><li>3-Tier Priority Inheritance</li><li>Per-Screen Remote Mute Control</li><li>Remote Display Blackout</li><li>TV Power Kiosk Auto-Start</li><li>Proof-of-Play CSV Audit Reports</li></ul>
-            <a class="button button-primary pricing-plan-button" href="#contact">Start Free Trial</a>
+            <a class="button button-primary pricing-plan-button" href="#contact">Request a Pilot</a>
           </article>
 
           <article class="pricing-plan">
@@ -298,9 +355,27 @@
             <h3>Custom Deployment</h3>
             <div class="pricing-plan-price">Custom <small>SLA &amp; Volume</small></div>
             <p>For large DOOH advertising networks, transit systems, and enterprise venues.</p>
-            <ul><li>50+ to 1,000+ Displays</li><li>Dedicated Private Cloud Server</li><li>Custom TV Firmware &amp; HDMI-CEC</li><li>Role-Based Venue Access (RBAC)</li><li>24/7 Priority SLA &amp; Dedicated TAM</li></ul>
+            <ul><li>50+ to 1,000+ Displays</li><li>Dedicated Private Cloud Server</li><li>Custom TV Firmware &amp; HDMI-CEC</li><li>Role-Based Venue Access (RBAC)</li><li>Support scope defined in proposal</li></ul>
             <a class="button pricing-plan-button" href="#contact">Contact Enterprise</a>
           </article>
+        </div>
+        <div class="pricing-clarity reveal" aria-label="Pricing information">
+          <strong>Before you purchase</strong>
+          <p>Displayed rates are planning estimates. Your quotation confirms applicable taxes, deployment assistance, support coverage, licence term, renewal, and any hardware or custom integration costs.</p>
+          <a href="terms.html">Review commercial terms <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="section buying-path" id="get-started">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">A clear buying path</p><h2>From enquiry to<br /><em>your first live screen.</em></h2></div>
+          <p>We confirm compatibility first, then help you pair a player and validate playback before you expand the network.</p>
+        </div>
+        <div class="buying-steps">
+          <article class="reveal"><span>01</span><h3>Describe your setup</h3><p>Tell us the TV models, number of screens, locations, orientation, and the content you expect to play.</p></article>
+          <article class="reveal delay-1"><span>02</span><h3>Validate one screen</h3><p>Install and pair a player, assign a sample playlist, and confirm online plus cached offline playback.</p></article>
+          <article class="reveal"><span>03</span><h3>Choose the licence</h3><p>Receive a quotation with the exact licence term, support scope, taxes, and any deployment services.</p></article>
+          <article class="reveal delay-1"><span>04</span><h3>Roll out with control</h3><p>Organize locations and groups, deploy playlists, and review screen and playback activity from the controller.</p></article>
         </div>
       </section>
 
@@ -332,6 +407,14 @@
             <summary>Can I check whether an advertisement played?<span aria-hidden="true">+</span></summary>
             <p>Playback reporting provides screen-specific activity, completed plays, errors, and timing information when the player has reported it.</p>
           </details>
+          <details>
+            <summary>What is included in the displayed price?<span aria-hidden="true">+</span></summary>
+            <p>The calculator is an estimate. A written quotation confirms the selected plan, licence term, taxes, support, installation assistance, and any custom work before purchase.</p>
+          </details>
+          <details>
+            <summary>Can we test one screen before a larger rollout?<span aria-hidden="true">+</span></summary>
+            <p>Yes. Start by validating pairing, orientation, media playback, offline continuity, and reporting on a representative TV before expanding to more locations.</p>
+          </details>
         </div>
       </section>
 
@@ -343,7 +426,11 @@
           <p>Start with one display or plan a network across locations. Spotivo keeps the setup understandable from day one.</p>
           <a class="contact-email" href="mailto:enterprise@spotivo.cloud">enterprise@spotivo.cloud <span aria-hidden="true">↗</span></a>
         </div>
-        <form class="contact-form reveal delay-1" id="contactForm">
+        <form class="contact-form reveal delay-1" id="contactForm" action="https://formsubmit.co/enterprise@spotivo.cloud" method="post">
+          <input type="hidden" name="_subject" value="New Spotivo commercial enquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://spotivo-cms-landing.onrender.com/thanks.html" />
+          <input class="form-honeypot" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
           <div class="contact-form-heading">
             <p class="eyebrow">Contact us</p>
             <h3>Tell us about your display network</h3>
@@ -376,9 +463,10 @@
               <label for="contactMessage">What do you need?</label>
               <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us about your locations, screens, and timeline." required></textarea>
             </div>
+            <label class="contact-consent contact-field-full"><input type="checkbox" name="privacy_consent" value="Agreed" required /><span>I agree that my enquiry may be sent to Spotivo and processed as described in the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label>
           </div>
           <button class="button button-primary contact-submit" type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
-          <p class="contact-form-note">Submitting opens your email app. No information is stored on this website.</p>
+          <p class="contact-form-note">Your enquiry is delivered securely through our form provider. Prefer email? Write to <a href="mailto:enterprise@spotivo.cloud">enterprise@spotivo.cloud</a>.</p>
           <p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
         </form>
       </section>
@@ -395,6 +483,7 @@
           <div>
             <h3>Product</h3>
             <a href="#workflow">How it works</a>
+            <a href="#product-tour">Product tour</a>
             <a href="#capabilities">Capabilities</a>
             <a href="#reliability">Offline playback</a>
             <a href="#pricing">Pricing</a>
@@ -417,9 +506,11 @@
           <div>
             <h3>Contact</h3>
             <a href="mailto:enterprise@spotivo.cloud">Product enquiry</a>
-            <a href="mailto:enterprise@spotivo.cloud?subject=Spotivo%20support">Support</a>
+            <a href="support.html">Support</a>
             <a href="#contact">Plan your setup</a>
-            <a href="#top">Back to top ↑</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="licensing.html">Licensing</a>
           </div>
         </div>
       </div>

@@ -144,6 +144,18 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .tab-progress { height: 4px; margin-top: auto; overflow: hidden; background: #dde1e8; }
 .tab-progress span { display: block; width: 25%; height: 100%; background: var(--blue); transition: width .35s; }
 
+.product-tour { background: #eef1ff; }
+.product-proof-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.proof-shot { margin: 0; overflow: hidden; border: 1px solid rgba(7,26,58,.12); border-radius: 24px; background: white; box-shadow: 0 20px 55px rgba(7,26,58,.09); }
+.proof-shot-wide { grid-column: span 2; }
+.proof-shot img { width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); }
+.proof-shot:not(.proof-shot-wide) img { aspect-ratio: 4/3; }
+.proof-shot figcaption { padding: 22px 24px 25px; display: flex; gap: 17px; align-items: flex-start; }
+.proof-shot figcaption > span { flex: 0 0 auto; width: 35px; height: 35px; display: grid; place-items: center; border-radius: 11px; color: var(--blue); background: var(--blue-soft); font: 800 11px "Manrope"; }
+.proof-shot figcaption strong, .proof-shot figcaption small { display: block; }
+.proof-shot figcaption strong { margin: 1px 0 6px; font: 700 16px "Manrope"; }
+.proof-shot figcaption small { color: var(--ink-soft); font-size: 12px; line-height: 1.55; }
+
 .capabilities { background: #eef1f6; }
 .capability-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 20px; }
 .capability-card { min-height: 400px; padding: 32px; overflow: hidden; position: relative; border-radius: var(--radius); background: white; }
@@ -204,6 +216,15 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .offline-badge strong, .offline-badge small, .sync-badge strong, .sync-badge small { display: block; font-size: 11px; }
 .offline-badge small, .sync-badge small { margin-top: 3px; color: var(--ink-soft); }
 
+.deployment-fit { display: grid; grid-template-columns: .78fr 1.22fr; gap: clamp(55px, 8vw, 120px); align-items: center; background: white; }
+.deployment-fit-copy h2 { font-size: clamp(36px, 3.6vw, 54px); line-height: 1.06; }
+.deployment-fit-copy > p:not(.eyebrow) { margin: 24px 0 30px; color: var(--ink-soft); font-size: 16px; line-height: 1.7; }
+.fit-checklist { display: grid; gap: 1px; overflow: hidden; border: 1px solid var(--line); border-radius: 24px; background: var(--line); }
+.fit-checklist article { padding: 25px 27px; display: grid; grid-template-columns: 42px 1fr; gap: 17px; background: white; }
+.fit-checklist article > span { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 12px; color: var(--blue); background: var(--blue-soft); font: 800 11px "Manrope"; }
+.fit-checklist strong { font: 700 16px "Manrope"; }
+.fit-checklist p { margin: 7px 0 0; color: var(--ink-soft); font-size: 13px; line-height: 1.55; }
+
 .use-cases { padding: 76px 0; overflow: hidden; background: var(--coral); }
 .use-cases > .eyebrow { margin-left: max(6vw, 32px); color: var(--ink); }
 .marquee { display: flex; width: max-content; animation: marquee 30s linear infinite; }
@@ -261,6 +282,20 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .pricing-plan-button { width: 100%; margin-top: auto; padding: 12px 16px; border: 1px solid var(--line); background: white; }
 .pricing-plan.featured .pricing-plan-button { color: var(--white); border-color: var(--blue); background: var(--blue); box-shadow: 0 12px 30px rgba(49,84,244,.25); }
 .pricing-plan.featured .pricing-plan-button:hover { box-shadow: 0 18px 36px rgba(49,84,244,.32); }
+.pricing-clarity { max-width: 1040px; margin: 24px auto 0; padding: 21px 24px; display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.66); }
+.pricing-clarity strong { font: 700 14px "Manrope"; }
+.pricing-clarity p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.55; }
+.pricing-clarity a { color: var(--blue); font-size: 12px; font-weight: 800; white-space: nowrap; }
+
+.buying-path { background: var(--ink); color: white; }
+.buying-path .section-heading > p { color: #aeb9ca; }
+.buying-path h2 em { color: #91a5ff; }
+.buying-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.buying-steps article { min-height: 285px; padding: 32px 28px; border-right: 1px solid rgba(255,255,255,.16); }
+.buying-steps article:last-child { border-right: 0; }
+.buying-steps article > span { color: #91a5ff; font: 800 11px "Manrope"; letter-spacing: .12em; }
+.buying-steps h3 { margin: 58px 0 14px; font-size: 21px; letter-spacing: -.035em; }
+.buying-steps p { margin: 0; color: #aeb9ca; font-size: 13px; line-height: 1.65; }
 
 .faq-section { padding: 105px max(6vw, 32px); display: grid; grid-template-columns: .78fr 1.22fr; gap: 8vw; background: var(--white); }
 .faq-intro { position: sticky; top: 120px; height: fit-content; }
@@ -295,6 +330,10 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .contact-submit { width: 100%; margin-top: 20px; border: 0; cursor: pointer; }
 .contact-form-note { margin: 14px 0 0; color: var(--ink-soft); font-size: 11px; line-height: 1.5; text-align: center; }
 .contact-form-status { min-height: 1.3em; margin: 7px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; text-align: center; }
+.contact-consent { display: flex; align-items: flex-start; gap: 10px; color: var(--ink-soft); font-size: 11px; line-height: 1.5; }
+.contact-consent input { flex: 0 0 auto; width: 16px; height: 16px; margin-top: 1px; accent-color: var(--blue); }
+.contact-consent a, .contact-form-note a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+.form-honeypot { position: absolute !important; left: -9999px !important; width: 1px !important; height: 1px !important; opacity: 0 !important; }
 
 .site-footer { padding: 80px max(6vw, 32px) 28px; color: white; background: var(--ink); }
 .footer-main { padding-bottom: 70px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 8vw; }
@@ -313,6 +352,24 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .footer-bottom > p:nth-child(2) { color: white; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .footer-bottom > div { justify-self: end; display: flex; gap: 16px; }
 .footer-bottom > div span::before { content: "•"; margin-right: 7px; color: var(--mint); }
+
+.legal-page { min-height: 100vh; padding: 135px 20px 80px; background: var(--paper); }
+.legal-shell { width: min(900px, 100%); margin: 0 auto; }
+.legal-back { display: inline-flex; margin-bottom: 28px; color: var(--blue); font-weight: 800; }
+.legal-card { padding: clamp(28px, 6vw, 64px); border: 1px solid var(--line); border-radius: 28px; background: white; box-shadow: var(--shadow); }
+.legal-card h1 { font-size: clamp(38px, 6vw, 62px); }
+.legal-card .legal-updated { margin: 16px 0 38px; color: var(--ink-soft); font-size: 13px; }
+.legal-card h2 { margin: 34px 0 12px; font-size: 23px; }
+.legal-card h3 { margin: 25px 0 10px; font-size: 17px; }
+.legal-card p, .legal-card li { color: var(--ink-soft); font-size: 15px; line-height: 1.75; }
+.legal-card ul { padding-left: 22px; }
+.legal-card a { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
+.support-grid { margin-top: 35px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.support-card { padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: #fafbff; }
+.support-card h2 { margin-top: 0; }
+.success-card { text-align: center; }
+.success-card img { width: 76px; margin: 0 auto 28px; }
+.success-card .button { margin-top: 24px; color: white; text-decoration: none; }
 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .75s ease, transform .75s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -342,6 +399,10 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .pricing-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pricing-plan:last-child { grid-column: 1 / -1; }
   .reliability-section { grid-template-columns: 1fr; }
+  .deployment-fit { grid-template-columns: 1fr; }
+  .buying-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .buying-steps article:nth-child(2) { border-right: 0; }
+  .buying-steps article:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.16); }
   .faq-section { grid-template-columns: 1fr; }
   .faq-intro { position: static; }
   .contact-section { grid-template-columns: minmax(0, .75fr) minmax(390px, 1.25fr); gap: 50px; }
@@ -378,6 +439,9 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .workflow-tabs { grid-template-columns: 1fr 1fr; }
   .workflow-tabs button { padding: 17px 10px; }
   .workflow-display { grid-template-columns: 1fr; }
+  .product-proof-grid { grid-template-columns: 1fr; }
+  .proof-shot-wide { grid-column: auto; }
+  .proof-shot img, .proof-shot:not(.proof-shot-wide) img { aspect-ratio: 4/3; }
   .workflow-note { padding: 24px; }
   .capability-grid { grid-template-columns: 1fr; }
   .capability-card, .capability-large { min-height: 420px; padding: 26px; }
@@ -396,6 +460,13 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .pricing-plan:last-child { grid-column: auto; }
   .pricing-plan { padding: 28px; }
   .pricing-plan > p { min-height: 0; }
+  .pricing-clarity { grid-template-columns: 1fr; gap: 10px; }
+  .pricing-clarity a { white-space: normal; }
+  .buying-steps { grid-template-columns: 1fr; }
+  .buying-steps article { min-height: 235px; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); }
+  .buying-steps article:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,.16); }
+  .buying-steps article:last-child { border-bottom: 0; }
+  .buying-steps h3 { margin-top: 40px; }
   .faq-intro h2 { font-size: clamp(34px, 10vw, 46px); }
   .faq-list summary { padding: 22px 0; font-size: 18px; }
   .faq-list details p { margin-right: 0; }
@@ -410,6 +481,7 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .footer-bottom { grid-template-columns: 1fr; gap: 12px; }
   .footer-bottom > p:nth-child(2) { order: -1; }
   .footer-bottom > div { justify-self: start; flex-direction: column; gap: 6px; }
+  .support-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

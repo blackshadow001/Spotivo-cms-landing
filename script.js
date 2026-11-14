@@ -78,6 +78,58 @@ tabs.forEach((tab) => tab.addEventListener("click", () => {
   }, 180);
 }));
 
+const pricingSlider = document.querySelector("#screenSlider");
+const pricingCount = document.querySelector("#calcScreenCount");
+const pricingButtonCount = document.querySelector("#btnScreenCount");
+const pricingAmount = document.querySelector("#calcPriceAmount");
+const pricingNote = document.querySelector("#calcBillingNote");
+const pricingTier = document.querySelector("#calcTierBadge");
+const billingButton = document.querySelector("#btnBillingCycle");
+const monthlyLabel = document.querySelector("#labelMonthly");
+const annualLabel = document.querySelector("#labelAnnual");
+let annualBilling = true;
+
+function updatePricingCalculator() {
+  if (!pricingSlider) return;
+  const count = Number(pricingSlider.value);
+  let rate = 499;
+  let tier = "Starter Plan";
+
+  if (count >= 50) {
+    rate = 299;
+    tier = "Enterprise Plan";
+  } else if (count >= 6) {
+    rate = 399;
+    tier = "Business Plan";
+  }
+
+  const regularMonthly = count * rate;
+  const displayedMonthly = annualBilling ? Math.round(regularMonthly * 0.8) : regularMonthly;
+  const annualTotal = displayedMonthly * 12;
+  const annualSavings = (regularMonthly - displayedMonthly) * 12;
+
+  if (pricingCount) pricingCount.textContent = String(count);
+  if (pricingButtonCount) pricingButtonCount.textContent = String(count);
+  if (pricingTier) pricingTier.textContent = tier;
+  if (pricingAmount) pricingAmount.textContent = displayedMonthly.toLocaleString("en-IN");
+  if (pricingNote) {
+    pricingNote.textContent = annualBilling
+      ? `Billed annually at ₹${annualTotal.toLocaleString("en-IN")} / yr (Save ₹${annualSavings.toLocaleString("en-IN")})`
+      : `Billed monthly. Switch to Annual to save 20% on all ${count} screens.`;
+  }
+}
+
+pricingSlider?.addEventListener("input", updatePricingCalculator);
+billingButton?.addEventListener("click", () => {
+  annualBilling = !annualBilling;
+  billingButton.classList.toggle("active", annualBilling);
+  billingButton.setAttribute("aria-pressed", String(annualBilling));
+  annualLabel?.classList.toggle("active", annualBilling);
+  monthlyLabel?.classList.toggle("active", !annualBilling);
+  updatePricingCalculator();
+});
+updatePricingCalculator();
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

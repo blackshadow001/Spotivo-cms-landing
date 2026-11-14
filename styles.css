@@ -259,6 +259,8 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .pricing-plan ul { margin: 4px 0 30px; padding: 0; display: grid; gap: 13px; list-style: none; font-size: 12px; }
 .pricing-plan li::before { content: "✓"; margin-right: 7px; color: var(--blue); font-weight: 800; }
 .pricing-plan-button { width: 100%; margin-top: auto; padding: 12px 16px; border: 1px solid var(--line); background: white; }
+.pricing-plan.featured .pricing-plan-button { color: var(--white); border-color: var(--blue); background: var(--blue); box-shadow: 0 12px 30px rgba(49,84,244,.25); }
+.pricing-plan.featured .pricing-plan-button:hover { box-shadow: 0 18px 36px rgba(49,84,244,.32); }
 
 .faq-section { padding: 105px max(6vw, 32px); display: grid; grid-template-columns: .78fr 1.22fr; gap: 8vw; background: var(--white); }
 .faq-intro { position: sticky; top: 120px; height: fit-content; }
@@ -272,11 +274,27 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .faq-list details[open] summary span { transform: rotate(45deg); color: white; background: var(--blue); }
 .faq-list details p { max-width: 740px; margin: -4px 60px 28px 0; color: var(--ink-soft); font-size: 16px; line-height: 1.7; }
 
-.contact-section { min-height: 600px; padding: 95px max(6vw, 32px); position: relative; display: grid; grid-template-columns: .7fr 1.3fr; align-items: center; overflow: hidden; background: #f4f0e7; }
-.contact-mark { width: min(34vw, 460px); aspect-ratio: 1; display: grid; place-items: center; border-radius: 50%; background: white; box-shadow: var(--shadow); transform: rotate(-8deg); }
-.contact-mark img { width: 72%; }
-.contact-copy { max-width: 780px; }
+.contact-section { min-height: 680px; padding: 95px max(6vw, 32px); position: relative; display: grid; grid-template-columns: minmax(0, .8fr) minmax(420px, 1.2fr); gap: clamp(55px, 8vw, 130px); align-items: center; overflow: hidden; background: #f4f0e7; }
+.contact-mark { width: 92px; aspect-ratio: 1; margin-bottom: 32px; display: grid; place-items: center; border-radius: 28px; background: white; box-shadow: 0 18px 45px rgba(7,26,58,.12); transform: rotate(-6deg); }
+.contact-mark img { width: 70%; }
+.contact-copy { max-width: 590px; }
 .contact-copy > p:not(.eyebrow) { max-width: 580px; color: var(--ink-soft); font-size: 16px; line-height: 1.7; }
+.contact-email { width: fit-content; margin-top: 30px; padding-bottom: 7px; display: inline-flex; gap: 12px; border-bottom: 1px solid currentColor; color: var(--blue); font-weight: 700; }
+.contact-form { width: 100%; max-width: 680px; justify-self: end; padding: clamp(26px, 4vw, 42px); border: 1px solid rgba(7,26,58,.1); border-radius: 28px; background: rgba(255,255,255,.94); box-shadow: 0 24px 70px rgba(7,26,58,.12); }
+.contact-form-heading { margin-bottom: 28px; }
+.contact-form-heading h3 { margin: 8px 0 7px; font-size: clamp(24px, 2.25vw, 34px); letter-spacing: -.04em; }
+.contact-form-heading > p:last-child { margin: 0; color: var(--ink-soft); line-height: 1.55; }
+.contact-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.contact-field { min-width: 0; display: grid; gap: 8px; }
+.contact-field-full { grid-column: 1 / -1; }
+.contact-field label { font-size: 12px; font-weight: 800; }
+.contact-field input, .contact-field select, .contact-field textarea { width: 100%; min-width: 0; padding: 13px 14px; border: 1px solid #d5dbe5; border-radius: 12px; color: var(--ink); background: white; font: 500 14px "DM Sans", sans-serif; transition: border-color .2s, box-shadow .2s; }
+.contact-field textarea { min-height: 122px; resize: vertical; }
+.contact-field input::placeholder, .contact-field textarea::placeholder { color: #8a96a8; }
+.contact-field input:focus, .contact-field select:focus, .contact-field textarea:focus { outline: 0; border-color: var(--blue); box-shadow: 0 0 0 4px rgba(49,84,244,.12); }
+.contact-submit { width: 100%; margin-top: 20px; border: 0; cursor: pointer; }
+.contact-form-note { margin: 14px 0 0; color: var(--ink-soft); font-size: 11px; line-height: 1.5; text-align: center; }
+.contact-form-status { min-height: 1.3em; margin: 7px 0 0; color: var(--blue); font-size: 12px; font-weight: 700; text-align: center; }
 
 .site-footer { padding: 80px max(6vw, 32px) 28px; color: white; background: var(--ink); }
 .footer-main { padding-bottom: 70px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 8vw; }
@@ -326,7 +344,7 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .reliability-section { grid-template-columns: 1fr; }
   .faq-section { grid-template-columns: 1fr; }
   .faq-intro { position: static; }
-  .contact-section { gap: 60px; }
+  .contact-section { grid-template-columns: minmax(0, .75fr) minmax(390px, 1.25fr); gap: 50px; }
   .footer-main { grid-template-columns: 1fr; }
 }
 
@@ -382,7 +400,10 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .faq-list summary { padding: 22px 0; font-size: 18px; }
   .faq-list details p { margin-right: 0; }
   .contact-section { min-height: auto; padding: 72px 20px; grid-template-columns: 1fr; }
-  .contact-mark { width: 70vw; max-width: 330px; justify-self: center; }
+  .contact-mark { width: 78px; margin-bottom: 25px; }
+  .contact-form { max-width: none; justify-self: stretch; }
+  .contact-form-grid { grid-template-columns: 1fr; }
+  .contact-field-full { grid-column: auto; }
   .site-footer { padding: 65px 20px 24px; }
   .footer-main { gap: 55px; padding-bottom: 50px; }
   .footer-links { grid-template-columns: 1fr 1fr; gap: 34px 20px; }

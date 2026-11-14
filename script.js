@@ -130,6 +130,32 @@ billingButton?.addEventListener("click", () => {
 });
 updatePricingCalculator();
 
+const contactForm = document.querySelector("#contactForm");
+const contactFormStatus = document.querySelector("#contactFormStatus");
+
+contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(contactForm);
+  const name = String(formData.get("name") || "").trim();
+  const email = String(formData.get("email") || "").trim();
+  const company = String(formData.get("company") || "").trim();
+  const screens = String(formData.get("screens") || "").trim();
+  const message = String(formData.get("message") || "").trim();
+  const subject = `Spotivo enquiry from ${name}${company ? ` — ${company}` : ""}`;
+  const body = [
+    `Name: ${name}`,
+    `Work email: ${email}`,
+    `Company: ${company || "Not provided"}`,
+    `Number of screens: ${screens}`,
+    "",
+    "Requirements:",
+    message,
+  ].join("\n");
+
+  if (contactFormStatus) contactFormStatus.textContent = "Opening your email app…";
+  window.location.href = `mailto:enterprise@spotivo.cloud?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {

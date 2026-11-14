@@ -336,16 +336,51 @@
       </section>
 
       <section class="contact-section" id="contact">
-        <div class="contact-mark" aria-hidden="true"><img src="assets/spotivo-mark.png" alt="" /></div>
         <div class="contact-copy reveal">
+          <div class="contact-mark" aria-hidden="true"><img src="assets/spotivo-mark.png" alt="" /></div>
           <p class="eyebrow">Ready when your screens are</p>
           <h2>Make every screen<br /><em>work with purpose.</em></h2>
           <p>Start with one display or plan a network across locations. Spotivo keeps the setup understandable from day one.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="mailto:enterprise@spotivo.cloud">Talk about your setup <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#top">Back to top <span aria-hidden="true">↑</span></a>
-          </div>
+          <a class="contact-email" href="mailto:enterprise@spotivo.cloud">enterprise@spotivo.cloud <span aria-hidden="true">↗</span></a>
         </div>
+        <form class="contact-form reveal delay-1" id="contactForm">
+          <div class="contact-form-heading">
+            <p class="eyebrow">Contact us</p>
+            <h3>Tell us about your display network</h3>
+            <p>Share a few details and we’ll help you choose the right setup.</p>
+          </div>
+          <div class="contact-form-grid">
+            <div class="contact-field">
+              <label for="contactName">Name</label>
+              <input id="contactName" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="contact-field">
+              <label for="contactEmail">Work email</label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+            </div>
+            <div class="contact-field">
+              <label for="contactCompany">Company</label>
+              <input id="contactCompany" name="company" type="text" autocomplete="organization" placeholder="Company or organisation" />
+            </div>
+            <div class="contact-field">
+              <label for="contactScreens">Number of screens</label>
+              <select id="contactScreens" name="screens">
+                <option value="1–5 screens">1–5 screens</option>
+                <option value="6–20 screens">6–20 screens</option>
+                <option value="21–50 screens">21–50 screens</option>
+                <option value="51–100 screens">51–100 screens</option>
+                <option value="More than 100 screens">More than 100 screens</option>
+              </select>
+            </div>
+            <div class="contact-field contact-field-full">
+              <label for="contactMessage">What do you need?</label>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="Tell us about your locations, screens, and timeline." required></textarea>
+            </div>
+          </div>
+          <button class="button button-primary contact-submit" type="submit">Send enquiry <span aria-hidden="true">↗</span></button>
+          <p class="contact-form-note">Submitting opens your email app. No information is stored on this website.</p>
+          <p class="contact-form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 

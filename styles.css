@@ -210,6 +210,16 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .marquee > div { display: flex; align-items: center; }
 .marquee span { padding: 0 26px; color: white; font: 800 clamp(40px, 5.5vw, 72px)/1 "Manrope"; letter-spacing: -.05em; }
 .marquee i { color: var(--ink); font-size: 40px; font-style: normal; }
+.venue-gallery { width: min(1280px, calc(100% - max(12vw, 64px))); margin: 58px auto 0; display: grid; grid-template-columns: 1.2fr .9fr .9fr; gap: 18px; }
+.venue-card { min-width: 0; height: 390px; position: relative; overflow: hidden; border: 1px solid rgba(255,255,255,.34); border-radius: 24px; background: var(--ink); box-shadow: 0 24px 55px rgba(7,26,58,.2); }
+.venue-card img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s cubic-bezier(.16,1,.3,1); }
+.venue-card::after { content: ""; position: absolute; inset: 38% 0 0; background: linear-gradient(transparent, rgba(4,14,34,.92)); pointer-events: none; }
+.venue-card:hover img { transform: scale(1.035); }
+.venue-card-copy { position: absolute; z-index: 1; right: 24px; bottom: 22px; left: 24px; color: white; }
+.venue-card-copy span { color: #aebdff; font-size: 9px; font-weight: 800; letter-spacing: .14em; }
+.venue-card-copy strong, .venue-card-copy small { display: block; }
+.venue-card-copy strong { max-width: 360px; margin-top: 7px; font: 800 clamp(18px, 1.7vw, 26px)/1.15 "Manrope", sans-serif; letter-spacing: -.035em; }
+.venue-card-copy small { margin-top: 9px; color: #d9dfeb; font-size: 10px; font-weight: 600; }
 
 /* Pricing and interactive fleet calculator */
 .pricing-section { background: var(--paper); }
@@ -308,6 +318,9 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .hero-copy { max-width: 760px; }
   .hero-stage { min-height: 540px; max-width: 720px; width: 100%; margin: 0 auto; }
   .section-heading { grid-template-columns: 1fr; gap: 20px; }
+  .venue-gallery { width: calc(100% - 48px); grid-template-columns: 1fr 1fr; }
+  .venue-card-wide { grid-column: 1 / -1; }
+  .venue-card { height: 360px; }
   .pricing-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pricing-plan:last-child { grid-column: 1 / -1; }
   .reliability-section { grid-template-columns: 1fr; }
@@ -338,6 +351,10 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .journey-strip { padding: 22px; display: grid; grid-template-columns: 1fr 1fr; }
   .journey-strip i { display: none; }
   .section, .reliability-section { padding: 72px 20px; }
+  .venue-gallery { width: calc(100% - 40px); margin-top: 40px; grid-template-columns: 1fr; }
+  .venue-card-wide { grid-column: auto; }
+  .venue-card { height: min(108vw, 430px); }
+  .venue-card-copy { right: 19px; bottom: 18px; left: 19px; }
   .section-heading { margin-bottom: 36px; }
   .section-heading h2, .reliability-copy h2, .contact-copy h2 { font-size: clamp(34px, 10vw, 46px); }
   .workflow-tabs { grid-template-columns: 1fr 1fr; }

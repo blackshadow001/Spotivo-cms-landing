@@ -144,17 +144,6 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
 .tab-progress { height: 4px; margin-top: auto; overflow: hidden; background: #dde1e8; }
 .tab-progress span { display: block; width: 25%; height: 100%; background: var(--blue); transition: width .35s; }
 
-.product-tour { background: #eef1ff; }
-.product-proof-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
-.proof-shot { margin: 0; overflow: hidden; border: 1px solid rgba(7,26,58,.12); border-radius: 24px; background: white; box-shadow: 0 20px 55px rgba(7,26,58,.09); }
-.proof-shot-wide { grid-column: span 2; }
-.proof-shot img { width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); }
-.proof-shot:not(.proof-shot-wide) img { aspect-ratio: 4/3; }
-.proof-shot figcaption { padding: 22px 24px 25px; display: flex; gap: 17px; align-items: flex-start; }
-.proof-shot figcaption > span { flex: 0 0 auto; width: 35px; height: 35px; display: grid; place-items: center; border-radius: 11px; color: var(--blue); background: var(--blue-soft); font: 800 11px "Manrope"; }
-.proof-shot figcaption strong, .proof-shot figcaption small { display: block; }
-.proof-shot figcaption strong { margin: 1px 0 6px; font: 700 16px "Manrope"; }
-.proof-shot figcaption small { color: var(--ink-soft); font-size: 12px; line-height: 1.55; }
 
 .capabilities { background: #eef1f6; }
 .capability-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 20px; }
@@ -439,9 +428,6 @@ h1 em, h2 em { color: var(--blue); font-family: Georgia, serif; font-weight: 400
   .workflow-tabs { grid-template-columns: 1fr 1fr; }
   .workflow-tabs button { padding: 17px 10px; }
   .workflow-display { grid-template-columns: 1fr; }
-  .product-proof-grid { grid-template-columns: 1fr; }
-  .proof-shot-wide { grid-column: auto; }
-  .proof-shot img, .proof-shot:not(.proof-shot-wide) img { aspect-ratio: 4/3; }
   .workflow-note { padding: 24px; }
   .capability-grid { grid-template-columns: 1fr; }
   .capability-card, .capability-large { min-height: 420px; padding: 26px; }

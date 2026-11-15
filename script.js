@@ -4,32 +4,32 @@ const workflowSteps = [
     title: "Bring your media in.",
     copy: "Upload campaign images and videos into one asset library. Spotivo prepares supported media for consistent TV playback.",
     list: ["Image and video assets", "Clear media type and duration", "Reusable across playlists"],
-    image: "assets/workflow/06-ads-clean.png",
-    alt: "Spotivo advertisement library"
+    image: "assets/workflow/prepare-illustration.png",
+    alt: "Illustration of media being added to a library"
   },
   {
     number: "02 / CONNECT",
     title: "Pair the physical screen.",
     copy: "Enter the temporary pairing code shown by the player, then name the display and set its installation direction.",
     list: ["Simple pairing code", "Portrait or landscape setup", "Flip and audio controls"],
-    image: "assets/workflow/04-screens-clean.png",
-    alt: "Spotivo screens and pairing view"
+    image: "assets/workflow/connect-illustration.png",
+    alt: "Illustration of a technician pairing a portrait display"
   },
   {
     number: "03 / DEPLOY",
     title: "Send the right playlist.",
     copy: "Arrange media in playback order and assign the playlist to one screen, a screen group, or an entire location.",
     list: ["Reorder playlist items", "Video plays to completion", "Target the exact audience"],
-    image: "assets/workflow/08-assignment-clean.png",
-    alt: "Spotivo playlist assignment view"
+    image: "assets/workflow/assign-illustration.png",
+    alt: "Illustration of a playlist assigned to screens at different venues"
   },
   {
     number: "04 / OBSERVE",
     title: "Know what is happening.",
     copy: "Use screen status and playback reporting to check that assigned content reached the display and completed playback.",
     list: ["Online and offline status", "Playback activity", "Screen-specific reporting"],
-    image: "assets/workflow/10-metrics-clean.png",
-    alt: "Spotivo playback metrics view"
+    image: "assets/workflow/observe-illustration.png",
+    alt: "Illustration of a manager reviewing playback status"
   }
 ];
 
